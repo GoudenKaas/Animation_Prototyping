@@ -1,0 +1,26 @@
+<svg width="200" height="300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25.684" y="31.389" width="14.905" height="54.444" rx="7.452" fill="url(#trunk)"/>
+            <rect x="28.479" y="12.916" width="34.601" height="28.611" rx="14.306" fill="url(#Leaf_2)"/>
+            <rect x="21.692" width="24.087" height="23.056" rx="11.528" fill="#277D18"/>
+            <rect x="9.449" y="7.5" width="16.768" height="18.056" rx="8.384" fill="#277D18"/>
+            <rect x="5.323" y="16.944" width="42.186" height="24.583" rx="12.292" fill="url(#Leaf_1)"/>
+            <path transform="rotate(180 70 100)" fill="url(#GND)" d="M70 100h70v27.083H70z"/>
+            <defs>
+                <linearGradient id="trunk" x1="33.137" y1="31.389" x2="34.876" y2="102.496" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#8F7126"/>
+                    <stop offset="1" stop-color="#493606"/>
+                </linearGradient>
+                <linearGradient id="Leaf_2" x1="45.779" y1="12.916" x2="94.781" y2="26.13" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#3F8133"/>
+                    <stop offset="1" stop-color="#3F8133"/>
+                </linearGradient>
+                <linearGradient id="Leaf_1" x1="26.416" y1="16.944" x2="22.18" y2="50.573" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#3F8133"/>
+                    <stop offset="1" stop-color="#2D8D1D"/>
+                </linearGradient>
+                <linearGradient id="GND" x1="105" y1="100" x2="105" y2="127.083" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#493606"/>
+                    <stop offset="1" stop-color="#3F8133"/>
+                </linearGradient>
+            </defs>
+        </svg>

@@ -1,0 +1,27 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#Leaf_1, #Leaf_4 {
+    animation: scale_1 1s ease-in-out infinite alternate;
+}
+#Leaf_2{
+    animation: scale_1 1s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+}
+#Leaf_3 {
+    animation: scale_1 1s ease-in-out infinite alternate;
+    animation-delay: 1.5s;
+}
+
+@keyframes scale_1 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
