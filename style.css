@@ -3,8 +3,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: end;
+    font-family: Inter, sans-serif;
+}
+.hidden {
+    display: none;
 }
 
+.cnf_1_btn {
+    border: 0px solid #fff;
+    transition: translateX 0.5s ease-in-out;
+}
+.cnf_1_btn:hover {
+    transform: translateX(5px);
+    transition: translateX 0.5s ease-in-out;
+    cursor: pointer;
+}
+.confirm_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    height: 20%;
+    background-color: #fff;
+    border: 2px solid #5962FF;
+    border-radius: 50%;
+    z-index: 1;
+    animation: appear 2s ease-in-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+    transform: translateY(-100%);
+} @keyframes appear {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Leaf Animations Declarations*/
 #Leaf_1, #Leaf_4 {
     animation: scale_1 1s ease-in-out infinite alternate;
 }
@@ -15,9 +57,7 @@ body {
 #Leaf_3 {
     animation: scale_1 1s ease-in-out infinite alternate;
     animation-delay: 1.5s;
-}
-
-@keyframes scale_1 {
+} @keyframes scale_1 {
     0% {
         transform: scale(1);
     }
@@ -25,3 +65,19 @@ body {
         transform: scale(1.025);
     }
 }
+
+/* Sapflow Animation Appears */
+#Sapflow {
+    animation: sapflow 2s linear infinite alternate;
+} @keyframes sapflow {
+    
+    0% {
+        opacity: 0;
+    } 50% {
+        opacity: 1;
+        background: -webkit-linear-gradient(#8d91e5 0%, #5962FF 0%);
+    } 100% {
+        background: -webkit-linear-gradient(#5962FF 100%, #545be0 100%);
+    }
+}
+
