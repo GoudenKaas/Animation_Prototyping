@@ -6,44 +6,7 @@ body {
     font-family: Inter, sans-serif;
 }
 .hidden {
-    display: none;
-}
-
-.cnf_1_btn {
-    border: 0px solid #fff;
-    transition: translateX 0.5s ease-in-out;
-}
-.cnf_1_btn:hover {
-    transform: translateX(5px);
-    transition: translateX 0.5s ease-in-out;
-    cursor: pointer;
-}
-.confirm_1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20%;
-    height: 20%;
-    background-color: #fff;
-    border: 2px solid #5962FF;
-    border-radius: 50%;
-    z-index: 1;
-    animation: appear 2s ease-in-out forwards;
-    animation-delay: 0.5s;
-    opacity: 0;
-    transform: translateY(-100%);
-} @keyframes appear {
-    0% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+    display: none !important;
 }
 
 /* Leaf Animations Declarations*/
@@ -72,7 +35,10 @@ body {
 } @keyframes sapflow {
     
     0% {
-        opacity: 0;
+        opacity: 0.01;
+    } 25% {
+        
+        background: -webkit-linear-gradient(#5962FF 0%, #545be0 0%);
     } 50% {
         opacity: 1;
         background: -webkit-linear-gradient(#8d91e5 0%, #5962FF 0%);
@@ -81,3 +47,29 @@ body {
     }
 }
 
+/* Sensor Animations*/
+#Sensor_1_Lbl, #Sensor_2_Lbl, #Heater_Lbl {
+    color:black;
+    animation: lblSlideIn 1s ease-in-out;
+} @keyframes lblSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to {
+        
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+#Sensor1_Pad, #Sensor2_Pad, #Heater_Pad {
+    animation: borderThickness 1s ease-in alternate infinite;
+} @keyframes borderThickness {
+    from {
+        height: 20px; 
+        width: 20px;
+    } to {
+        height: 10px; 
+        width: 10px;
+    }
+}
