@@ -8,8 +8,108 @@ body {
 .hidden {
     display: none !important;
 }
+.container {
+    overflow: hidden;
+}
+.svg-grid {
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.arrow {
+  height: 151px; 
+  width: 301px;
+}
+/* SVG 2 */
+.two {
+    position: relative;
+  display: grid;
+  grid-template-rows: repeat(64, 4px 1fr);
+  grid-template-columns: repeat(64, 4px 1fr);
+  border: 15px solid black;
+  border-radius: 50%;
+  height: 280.5px; 
+  width: 280.5px; 
+  overflow: hidden;
+}
 
+.treeTrunk {
+    position: relative;
+    height: 300px;
+    width: 150px;
+    background: -webkit-linear-gradient(rgb(60, 82, 0), rgb(158, 123, 16));
+    grid-column: 37;
+    grid-row: 0;
+    justify-content: center;
+}
+.sensor1, .sensor2 {
+    margin: 0 auto;
+    height: 50px;
+    width: 50px; 
+    border-radius: 50%;
+    background-color: black;
+    display: flex; 
+    align-items: center;
+}
+.heater {
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex; 
+    align-items: center;
+}
+/* Sapflow Animation Appears */
+.sapflow {
+    position: relative; 
+    z-index: 5;
+    height: 280px;
+    width: 70px;
+    grid-column: 54;
+    grid-row:0;
+    background: -webkit-linear-gradient(rgb(135, 135, 234), rgb(52, 52, 218));
+}
+.gnd {
+    position: relative;
+    height: 200px;
+    width: 500px;
+    background: -webkit-linear-gradient(rgb(25, 126, 7), rgb(2, 140, 73));
+}
+.sensor-align {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.pad {
+    margin: 0 auto;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    align-self: center;
+}
+.heater-pad {
+    margin: 0 auto;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    background-color: rgb(201, 46, 46);
+}
 /* Leaf Animations Declarations*/
+#Leaf_1{
+    position: relative;
+    z-index: 10;
+}
+#Leaf_2 {
+    position: relative;
+    z-index: 8;
+}
 #Leaf_1, #Leaf_4 {
     animation: scale_1 1s ease-in-out infinite alternate;
 }
@@ -28,25 +128,6 @@ body {
         transform: scale(1.025);
     }
 }
-
-/* Sapflow Animation Appears */
-#Sapflow {
-    animation: sapflow 2s linear infinite alternate;
-} @keyframes sapflow {
-    
-    0% {
-        opacity: 0.01;
-    } 25% {
-        
-        background: -webkit-linear-gradient(#5962FF 0%, #545be0 0%);
-    } 50% {
-        opacity: 1;
-        background: -webkit-linear-gradient(#8d91e5 0%, #5962FF 0%);
-    } 100% {
-        background: -webkit-linear-gradient(#5962FF 100%, #545be0 100%);
-    }
-}
-
 /* Sensor Animations*/
 #Sensor_1_Lbl, #Sensor_2_Lbl, #Heater_Lbl {
     color:black;
@@ -60,16 +141,5 @@ body {
         
         opacity: 1;
         transform: translateX(0%);
-    }
-}
-#Sensor1_Pad, #Sensor2_Pad, #Heater_Pad {
-    animation: borderThickness 1s ease-in alternate infinite;
-} @keyframes borderThickness {
-    from {
-        height: 20px; 
-        width: 20px;
-    } to {
-        height: 10px; 
-        width: 10px;
     }
 }
