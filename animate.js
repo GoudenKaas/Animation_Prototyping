@@ -6,6 +6,7 @@ const AnimationStateCount = {
 	Heating: false
 } 
 
+ 
 /* 
 
 1) Make a global div that contain all the SVG elements
