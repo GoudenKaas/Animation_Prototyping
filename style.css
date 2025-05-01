@@ -5,8 +5,11 @@ body {
     align-items: center;
     font-family: Inter, sans-serif;
 }
-.hidden {
+.hidden, .disabled {
     display: none !important;
+}
+.enabled {
+    display: block;
 }
 .container {
     overflow: hidden;
@@ -17,22 +20,10 @@ body {
     margin: 0 auto;
     align-items: center;
 }
-.arrow {
-    margin-right: 10px;
-    animation: arrow-slide 1s ease-in;
-} @keyframes arrow-slide {
-    from {
-          opacity: 0;
-        transform: translateX(-100%);
-    } 
-    to {
-        opacity: 1;
-        transform: translateX(10%);
-    }
-}
-/* SVG 2 */
+/* ZOOM-IN DIV*/
+/* SVG 3 */
 .two {
-    position: relative;
+  position: relative;
   display: grid;
   grid-template-rows: repeat(64, 4px 1fr);
   grid-template-columns: repeat(64, 4px 1fr);
@@ -42,7 +33,6 @@ body {
   width: 280.5px; 
   overflow: hidden;
 }
-
 .treeTrunk {
     position: relative;
     height: 300px;
@@ -69,7 +59,6 @@ body {
     display: grid;
     grid-template-rows: repeat(10, 4px 1fr);
     grid-template-columns: repeat(11, 4px 1fr);
-
 }
 .sensor1, .sensor2 {
     margin: 0 auto;
@@ -113,7 +102,6 @@ body {
     width: 500px;
     background: -webkit-linear-gradient(rgb(25, 126, 7), rgb(2, 140, 73));
 }
-
 /* Positioning  */
 .sensor1, .sensor2, .heater, .stroke-1, .stroke-2,
 .stroke-3, .pad-1, .pad-2, .heater-pad {
@@ -155,7 +143,6 @@ body {
     grid-column: 8;
     align-self: center;
 }
-
 .stroke-grid {
     grid-row: 1;
     grid-column: 54;
@@ -167,60 +154,19 @@ body {
     grid-template-columns: repeat(11, 4px 1fr);
 }
 .stroke-1 {
-    grid-row: 10;
-    grid-column: 17;
-    display: none;
+ grid-row: 10;
+ grid-column: 17;
+ display: none;
 }
 .stroke-2 {
-    grid-row: 27;
-    grid-column: 17;
+grid-row: 27;
+grid-column: 17;
 align-items: center;
 display: none;
-}
+} 
 .stroke-3 {
     grid-row: 44;
     grid-column: 17;
     display: none;
 }
-/* Leaf Animations Declarations*/
-#Leaf_1{
-    position: relative;
-    z-index: 10;
-}
-#Leaf_2 {
-    position: relative;
-    z-index: 8;
-}
-#Leaf_1, #Leaf_4 {
-    animation: scale_1 1s ease-in-out infinite alternate;
-}
-#Leaf_2{
-    animation: scale_1 1s ease-in-out infinite alternate;
-    animation-delay: 0.5s;
-}
-#Leaf_3 {
-    animation: scale_1 1s ease-in-out infinite alternate;
-    animation-delay: 1.5s;
-} @keyframes scale_1 {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.025);
-    }
-}
-/* Sensor Animations*/
-#Sensor_1_Lbl, #Sensor_2_Lbl, #Heater_Lbl {
-    color:black;
-    animation: lblSlideIn 1s ease-in-out;
-} @keyframes lblSlideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-10%);
-    }
-    to {
-        
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
+
