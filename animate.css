@@ -3,7 +3,9 @@
 }     
 
 /*
- Leaf Animations Declarations                     */
+ Leaf Animations Declarations             
+     <script defer src="animate.js"></script>
+ */
 #Leaf_1{
     position: relative;
     z-index: 10;
@@ -35,10 +37,10 @@
 - Text transform and position 
 - scaleDown and display none
                         */
-.one {
+.one,.two, .three {
     animation: dissapear 1s ease-out reverse;
 }
-.two, .three, .four {
+.four {
     animation: dissapear 1s ease-out reverse;
 }
 @keyframes pop-up-svg1 {

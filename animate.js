@@ -9,6 +9,7 @@ window.addEventListener("load", (e) => {
 
 function transition1() {
 	console.log("page passed by function 1");
+	document.getElementById("one").classList.remove("enabled");
 	document.getElementById("one").classList.add("disabled");
 	document.getElementById("two").classList.remove("disabled");
 	document.getElementById("two").classList.add("enabled");

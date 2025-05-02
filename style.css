@@ -10,15 +10,19 @@ body {
 }
 .enabled {
     display: block;
-}
-.container {
-    overflow: hidden;
+    margin: 0 auto;
 }
 .svg-grid {
+    height: auto;
+    width: 75vw;
+    padding-top: 10px;
     position: relative;
     display: flex;
     margin: 0 auto;
+    justify-content: center;
     align-items: center;
+    border: solid 5px black; 
+    border-radius: 15px;
 }
 /* ZOOM-IN DIV*/
 /* SVG 3 */
@@ -169,4 +173,15 @@ display: none;
     grid-column: 17;
     display: none;
 }
-
+.arrow-graph {
+    height: 230px;
+    width: max-content; 
+} 
+.arrow-sapflow {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+} 
+.flex-four-div {
+   display: flex; 
+}
