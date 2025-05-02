@@ -80,7 +80,7 @@ body {
 }
 .stroke-1, .stroke-2, .stroke-3 {
     height:10px;
-    width: 100px;
+    width: 77px;
     border: black 2px solid;
     background-color: black;
     border-radius: 15px;
@@ -160,18 +160,15 @@ body {
 .stroke-1 {
  grid-row: 10;
  grid-column: 17;
- display: none;
 }
 .stroke-2 {
 grid-row: 27;
 grid-column: 17;
 align-items: center;
-display: none;
 } 
 .stroke-3 {
     grid-row: 44;
     grid-column: 17;
-    display: none;
 }
 .arrow-graph {
     height: 230px;
@@ -183,5 +180,54 @@ display: none;
     left: 30%;
 } 
 .flex-four-div {
-   display: flex; 
+   display: flex;
+   align-items: center; 
 }
+/*  */ 
+.text-pos-1 {
+    position: absolute;
+    /* left: 395px; */
+    right: 300px;
+    top: 300px;
+    width: max-content;
+    height: max-content;
+}
+.text-pos-2 {
+    position: absolute;
+    /* left: 395px; */
+    right: 190px;
+    top: 300px;
+    width: 300px;
+    height: max-content;
+}
+.text-pos-3_a {
+    position: absolute;
+    top: 300px;
+    width: 300px;
+    height: max-content;
+    right: 134px;
+}
+.text-pos-3_b {
+    position: absolute;
+    top: 300px;
+    width: 300px;
+    height: max-content;
+    right: 134px;
+}
+.text-pos-3_c {
+    position: absolute;
+    top: 300px;
+    width: 300px;
+    height: max-content;
+    right: 134px;
+}
+.text-pos-4 {
+    margin: 0 auto;
+    width: max-content;
+    padding-top: 10px;
+}
+.symbol_text_stack {
+    display: grid;
+    justify-content: center;
+}
+
