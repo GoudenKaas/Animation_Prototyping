@@ -22,7 +22,7 @@ body {
 }
 /* ZOOM-IN DIV*/
 /* SVG 3 */
-.two {
+.grid_base {
   position: relative;
   display: grid;
   grid-template-rows: repeat(64, 4px 1fr);
@@ -50,7 +50,7 @@ body {
     width: 70px;
     grid-column: 54;
     grid-row:1;
-    background: -webkit-linear-gradient(rgb(135, 135, 234), rgb(52, 52, 218));
+    background: -webkit-linear-gradient(rgb(206, 153, 8), rgb(242, 255, 3));
 }
 .sapflow-grid {
     position: relative;
@@ -114,7 +114,7 @@ body {
 }
 .heater {
     grid-column: 4;
-    grid-row: 9;
+    align-self: center;
 }
 .sensor2 {
     grid-column: 4;

@@ -35,16 +35,11 @@
 - Text transform and position 
 - scaleDown and display none
                         */
-.svg1 { /* Boom popup*/
-    animation: pop-up-svg1 1s ease-in;
-}
-#text_svg1{ /* text uitleg boom1 */
-    animation: slide-down ease 1s;
-    animation-delay: 5s;
-}
 .one {
     animation: dissapear 1s ease-out reverse;
-    animation-delay: 7s;
+}
+.two, .three, .four {
+    animation: dissapear 1s ease-out reverse;
 }
 @keyframes pop-up-svg1 {
     from {
