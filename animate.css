@@ -1,6 +1,22 @@
 * {
     transition: all 200ms ease !important;
-}     
+}    
+.enabled {
+    animation: appear;
+    animation-fill-mode: forwards;
+} 
+.enabled:nth-of-type(1) {
+    animation-duration: 5s;
+} 
+.enabled:nth-of-type(2) {
+    animation-duration: 5s;
+} 
+.enabled:nth-of-type(3) {
+    animation-duration: 10s;
+} 
+.enabled:nth-of-type(4) {
+    animation-duration: 5s;
+} 
 
 /*
  Leaf Animations Declarations             
@@ -37,7 +53,13 @@
 - Text transform and position 
 - scaleDown and display none
                         */
-.one,.two, .three {
+.one {
+    animation: dissapear 1s ease-out reverse;
+}
+.two {
+    animation: dissapear 1s ease-out reverse;
+}
+.three {
     animation: dissapear 1s ease-out reverse;
 }
 .four {
@@ -63,13 +85,8 @@
         opacity: 1;
     }
 }
-@keyframes dissapear{
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(-20%);
-        opacity: 0;
-    }
+@keyframes appear{
+  0% {
+    
+  }
 }

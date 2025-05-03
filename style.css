@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
 }
 .svg-grid {
-    height: auto;
+    min-height: 25vh;
     width: 75vw;
     padding-top: 10px;
     position: relative;
@@ -80,10 +80,10 @@ body {
 }
 .stroke-1, .stroke-2, .stroke-3 {
     height:10px;
-    width: 77px;
+    width: 73px;
     border: black 2px solid;
     background-color: black;
-    border-radius: 15px;
+    
 }
 .pad-1, .pad-2 {
     margin: 0 auto;
@@ -230,4 +230,10 @@ align-items: center;
     display: grid;
     justify-content: center;
 }
-
+#btn-slideShow {
+    height:50px;
+    width:200px;
+    border: solid 5px black;
+    border-radius: 10px;
+    font-weight: bold;
+}
