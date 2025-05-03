@@ -15,16 +15,16 @@
     </head>
     <body>
         <div id="slideSHow" class="svg-grid">
-            <button id="btn-slideShow">Start</button>
+            <button id="btn-slideShow" class="disabled">Start</button>
             <!--Naked tree-->
-            <div id="one" class="svg disabled">
+            <div id="one" class="svg enabled">
                 <div class="one-wrapper">
-                    <div class="text-pos-1 hidden">
+                    <div id="text-pos-1" class="text-pos-1 hidden">
                         <p class="div_one_explain">
                             Dit is een boom.
                         </p>
                     </div>
-                    <svg class="svg1" width="380" height="507" viewBox="0 0 336 507" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg id="svg1" width="380" height="507" viewBox="0 0 336 507" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="102"id="leaf_4" width="138.709" height="132.767" rx="66.3835" fill="#277D18"/>
                         <rect x="29" y="29" id="leaf_3" width="96.5601" height="103.974" rx="48.28" fill="#277D18"/>
                         <rect x="84" y="59" width="152" height="183" rx="60" fill="url(#paint0_linear_169_2)"/>
@@ -59,10 +59,10 @@
         <!--SVG2: Tree with sapflow-->
         <div class="disabled" id="two">
             <div class="two-wrapper">
-                <div class="text-pos-2 hidden">
+                <div id="text-pos-2" class="text-pos-2 hidden">
                     <p>Ons doel is om de <b>sapstroom</b> op te meten.</p>
                 </div>
-                <svg width="336" height="507" viewBox="0 0 336 507" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="svg2" width="336" height="507" viewBox="0 0 336 507" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="121.906" y="146.754" width="85.8312" height="313.522" rx="42.9156" fill="url(#paint0_linear_556_296)"/>
                     <rect x="84" y="59" width="152" height="183" rx="60" fill="url(#paint1_linear_556_296)"/>
                     <rect x="102" width="138.709" height="132.767" rx="66.3835" fill="#277D18"/>
@@ -102,16 +102,16 @@
 </div>
 <!-- SVG 3 three with sensors and arrow h-->
 <div class="disabled" id="three">
-    <div class="text-pos-3_a hidden">
+    <div id="text-pos-3_a" class="text-pos-3_a hidden">
         <p>Sensor 1 meet <b>normale temperatuur</b> van de boom</p>
     </div>
-    <div class="text-pos-3_b hidden">
+    <div id="text-pos-3_b" class="text-pos-3_b hidden">
                 <p>Heater zal het sap doen stijgen in temperatuur</p>
             </div>
-            <div class="text-pos-3_c hidden">
+            <div id="text-pos-3_c" class="text-pos-3_c hidden">
                 <p>Sensor 2 zal de temperatuur van het opgewarmde sapstroom opmeten.</p>
             </div>
-            <svg width="336" height="507" viewBox="0 0 336 507" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg id="svg3" width="336" height="507" viewBox="0 0 336 507" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="121.906" y="146.754" width="85.8312" height="313.522" rx="42.9156" fill="url(#paint0_linear_554_192)"/>
                 <rect x="84" y="59" width="152" height="183" rx="60" fill="url(#paint1_linear_554_192)"/>
                 <rect x="102" width="138.709" height="132.767" rx="66.3835" fill="#277D18"/>
@@ -167,7 +167,7 @@
                     </div>
                     <div class="sapflow">
                         <!-- Arrow -->
-                                <svg class="arrow-sapflow" width="24" height="29" viewBox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg id="svg4" class="arrow-sapflow" width="24" height="29" viewBox="0 0 24 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.0607 0.939338C12.4749 0.353551 11.5251 0.353551 10.9393 0.939338L1.3934 10.4853C0.807612 11.0711 0.807612 12.0208 1.3934 12.6066C1.97918 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.939338ZM12 29H13.5L13.5 2H12H10.5L10.5 29H12Z" fill="white"/>
                                 </svg>           
                                 
@@ -228,5 +228,6 @@
 </div>
 </div>
 <script defer src="animate.js"></script>
+ 
 </body>
 </html>

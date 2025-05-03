@@ -24,7 +24,6 @@ body {
     border: solid 5px black; 
     border-radius: 15px;
 }
-/* ZOOM-IN DIV*/
 /* SVG 3 */
 .grid_base {
   position: relative;
@@ -46,7 +45,6 @@ body {
     grid-row: 0;
     justify-content: center;
 }
-/* Sapflow Animation Appears */
 .sapflow {
     position: relative; 
     z-index: 5;
